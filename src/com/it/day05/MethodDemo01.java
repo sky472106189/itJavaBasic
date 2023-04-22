@@ -4,8 +4,8 @@ package com.it.day05;
  * 递归求n的阶乘
  * 底层是类似栈的入栈出栈操作实行。
  * 老师说每一个结果都有一个栈帧存储
- * 疑问:什么是栈帧？是栈帧还是栈针？
- * 疑问：递归貌似更消耗空间，不是很确定，有待查证。
+ * 每一个方法对应一个栈帧。每一个栈帧有方法运行所需要的内存，以及局部变量
+ * 递归貌似消耗栈空间，容易报错StackOverflowError，不到万不得已还是用循环解决
  */
 public class MethodDemo01 {
     public static void main(String[] args) {
