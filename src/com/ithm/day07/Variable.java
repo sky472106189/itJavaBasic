@@ -25,6 +25,10 @@ public class Variable {
     public static void main(String[] args) {
         // 都是局部变量
         int i = 0;
-        Variable variable = new Variable();
+        Variable var = new Variable();
+        // System.out.println(k); // 无法访问 因为k是成员变量 需要先new 出一片空间才行
+        System.out.println(var.k);
     }
+
+    public void m1(){}
 }
