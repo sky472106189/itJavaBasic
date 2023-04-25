@@ -1,8 +1,11 @@
 package com.ithm.demo;
 
 /*
+* - 在JDK1.6及之前,字符串常量池存放在方法区中。到JDK1.7之后,就从方法区中移除了,而存放在堆中
+* -
 * 正确理解和使用JAVA中的字符串常量池
 * 摘自https://blog.csdn.net/BASK2311/article/details/128455119
+* 摘自https://blog.csdn.net/weixin_53170971/article/details/127215939
 * */
 public class StringDemo04 {
     public static void main(String[] args) {
