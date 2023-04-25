@@ -24,19 +24,23 @@ public class StringBuilderDemo03 {
 
 //        Student data = StringBuilderDemo03.getData();
 //        System.out.println(data);
-        /*
+
         String str1 = "12ab,java,cd,Server78";
-        List<String> resStr = StringBuilderDemo03.func1(str1);
+        List<String> resStr = StringBuilderDemo03.func2(str1);
         for (String res : resStr) {
             System.out.println(res);
-        }*/
+        }
 
         /*
         String str0 ="13586040001";
         System.out.println(isPhoneNum(str0));*/
 
-        String str9 = "上海自来水来自海上";
-        System.out.println(isReverse(str9));
+/*        String str9 = "上海自来水来自海上";
+        System.out.println(isReverse(str9));*/
+
+        String str8 = "12aAa";
+        System.out.println(str8.toUpperCase());
+
     }
 
     /***
@@ -121,6 +125,44 @@ public class StringBuilderDemo03 {
                 // split[i] = chars.toString();
                 split[i] = new String(chars);
                 flag = false;   // 初始化flag 继续判断下一组数据
+            }
+        }
+        List<String> list = new ArrayList<>();
+        for (int i = 0; i < split.length; i++) {
+            list.add(split[i]);
+        }
+        return list;
+    }
+
+    /***
+     * 方法二
+     * 遍历字符串，按照'，'分隔
+     * 如果字符串没有包含数字，就将字符串中的小写字母转成大写字母并打印字符串
+     * @param param
+     * @return
+     */
+    public static List<String> func2(String param) {
+        String[] split = null;
+        if (param.contains("，")) {
+            split = param.split("，");
+        } else {
+            split = param.split(",");
+        }
+
+        boolean flag = false;
+        for (int i = 0; i < split.length; i++) {
+            char[] chars = split[i].toCharArray();
+            for (int j = 0; j < chars.length; j++) {
+                if (chars[j] >= '0' && chars[j] <= '9') {
+                    //含有数字
+                    flag = true;
+                    break;
+                }
+            }if(flag){
+                // 此语句错在只转换,未传值,注意区分和C的区别
+                // split[i].toUpperCase()
+                split[i] = split[i].toUpperCase();
+                flag = false;
             }
         }
         List<String> list = new ArrayList<>();
