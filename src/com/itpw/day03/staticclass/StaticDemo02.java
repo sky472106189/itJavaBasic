@@ -18,7 +18,7 @@ class Chinese{
     //静态变量
     // static String country; 不赋值就为初始值 引用类型初始值null
     // 静态变量在类加载时初始化,不需要new对象,静态变量的空间就已经存在了
-    // 静态变量存储在方法区中
+    // 静态变量存储在【方法区】中
     static String country = "中国";
 
     public Chinese() {

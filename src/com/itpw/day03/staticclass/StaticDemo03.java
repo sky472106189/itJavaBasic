@@ -16,7 +16,7 @@ public class StaticDemo03 {
         // 不会出现空指针异常
         // 因为静态变量不需要对象的存在
         System.out.println(e1.country);
-        // 会出现
+        // 会出现空指针异常
         System.out.println(e1.id);
 
     }

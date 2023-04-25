@@ -15,8 +15,7 @@ public class StaticOrder {
     // 静态代码块 类加载时执行
     static {
         // 能访问静态变量i 不能访问实例变量k
-        System.out.println("i=" + i);
-        // 这样能访问k
+        // 这样才能访问k
 //        StaticOrder obj = new StaticOrder();
 //        System.out.println(obj.k);
 
