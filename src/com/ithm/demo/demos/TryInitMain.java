@@ -1,5 +1,9 @@
 package com.ithm.demo.demos;
 
+/*
+    在对子类对象进行初始化时，父类的构造函数也会运行。
+    那是因为子类的构造函数默认第一行有一条隐式的语句super()；
+*/
 public class TryInitMain {
     public static void main(String[] args) {
         // 子类的无参构造方法 会直接调用到 父类的无参构造方法
