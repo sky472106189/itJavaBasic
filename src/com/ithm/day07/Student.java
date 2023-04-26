@@ -1,8 +1,7 @@
 package com.ithm.day07;
 
-/***
- * 学生类
- */
+
+// 学生类
 public class Student {
     private String name;
     private int age;
