@@ -1,12 +1,11 @@
 package com.itpw.day04;
 
 /*
- * this()语法 作用在于语法复用
- * */
+  this()语法 作用在于语法复用
+*/
 public class ThisDemo02 {
     public static void main(String[] args) {
         Date d1 = new Date();
-
     }
 }
 

@@ -11,7 +11,7 @@ public class ThisDemo01 {
     // 编译报错,因为静态方法是采用【类名.】方式访问
     // 而this是代表当前对象,但静态方法不需要对象。矛盾了
     public static void staticFunc(){
-//        System.out.println(this.name);
+        //this.name;
     }
 }
 
