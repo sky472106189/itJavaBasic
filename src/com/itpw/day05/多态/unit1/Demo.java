@@ -23,6 +23,8 @@ public class Demo {
               move的时候，真正参与move的对象是一只猫，所以运行阶段会
               动态绑定会动态执行Cat对象的move()方法，这个过程属于
               运行阶段绑定(运行阶段绑定属于动态绑定)
+            3.注意:如果执行的方法是子类特有的，那么多态后的对象无法执行子类
+              特有的方法。具体可以看a3的例子
 
            多态表示多种形态：
                 编译的时候一种形态
@@ -42,7 +44,7 @@ public class Demo {
         // a3.catchMouse(); // 错误:找不到符号
 
         // 如果要执行父类中没有,子类中特有的方法,就需要向下转型
-        Cat x = (Cat)a3;
+        Cat x = (Cat) a3;
         x.catchMouse(); //编译通过
 
         // 那为什么不直接Cat a3 = new Cat()呢?
@@ -78,7 +80,7 @@ public class Demo {
             进行判断.可以很好避免ClassCastException异常
         */
         Animal a5 = new Bird();
-        if(a5 instanceof Cat) {
+        if (a5 instanceof Cat) {
             Cat y1 = (Cat) a4;
             y.catchMouse();
         }
