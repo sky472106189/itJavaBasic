@@ -2,12 +2,12 @@ package com.itpw.day05.override;
 
 /*
 * 方法覆盖(重写)几个注意事项：
-*   1.方法覆盖只是针对方法，和属性无关
-*   2.私有方法无法覆盖
-*   3.构造方法不能被继承，所有构造方法也不能被覆盖
-*   4.方法覆盖只是针对于实例方法，静态方法覆盖没有意义
+*   1.方法重写只是针对方法，和属性无关
+*   2.私有方法无法重写
+*   3.构造方法不能被继承，所有构造方法也不能被重写
+*   4.方法重写只是针对于实例方法，静态方法重写没有意义
 * */
-public class OverriderDemo {
+public class OverrideDemo01 {
 
     public static void main(String[] args) {
         Son son = new Son();
