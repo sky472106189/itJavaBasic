@@ -1,0 +1,16 @@
+- is a
+    - Cat is a Animal
+    - 满足is a的表示“继承关系”
+    - Cat extends B
+- has a
+    - I has a pen
+    - 满足has a表示“关联关系”
+    - 关联关系通常以“属性”的方式存在
+    - I{
+        Pen pen;
+      }
+- like a
+    - Cooker like a FoodMenu(抽象：厨师像一个菜单)
+    - 满足like a表示“实现关系”
+    - 实现关系通常是：类实现接口
+    - Cooker implements FoodMenu{}
