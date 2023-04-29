@@ -1,7 +1,8 @@
 package com.itpw.day01.自动类型转换;
 
 /*
-* Java中,任何情况下,整数型的"字面量"默认被当做int类型处理
+* Java中,任何情况下,整数型的"字面量"默认被当做int类型处理,
+* 小数型的"字面量"默认被当做double类型处理
 * */
 public class IntDemo01 {
     public static void main(String[] args) {
