@@ -12,15 +12,21 @@ package com.itpw.day02.对象和引用.学生demo;
 
 
 public class StudentDemo {
+
+    // 1.成员变量
+    //  1.1实例变量(堆中)
+    int k = 10;
+    //  1.2静态变量(方法区)
+    static int j = 10;
+
     public static void main(String[] args) {
 
-        // 局部变量
+        // 局部变量(栈中)
         int i = 10;
-
         Student s1 = new Student();
         Student s2 = new Student();
 
-        //实例变量(成员变量)
+        //实例变量
         s1.no = 100;
         s2.name = "zs";
     }
