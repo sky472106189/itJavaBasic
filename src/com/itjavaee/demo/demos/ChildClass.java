@@ -1,4 +1,4 @@
-package com.ithm.demo.demos;
+package com.itjavaee.demo.demos;
 
 public class ChildClass extends ParentClass{
     private int childX = 1;

@@ -1,4 +1,4 @@
-package com.ithm.demo;
+package com.itjavaee.demo;
 
 /*
 * - 在JDK1.6及之前,字符串常量池存放在方法区中。到JDK1.7之后,就从方法区中移除了,而存放在堆中

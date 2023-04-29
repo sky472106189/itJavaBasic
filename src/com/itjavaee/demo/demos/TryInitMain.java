@@ -1,4 +1,4 @@
-package com.ithm.demo.demos;
+package com.itjavaee.demo.demos;
 
 /*
     在对子类对象进行初始化时，父类的构造函数也会运行。

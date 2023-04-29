@@ -1,4 +1,4 @@
-package com.ithm.demo.demos;
+package com.itjavaee.demo.demos;
 
 public class ParentClass {
     private int parentX;

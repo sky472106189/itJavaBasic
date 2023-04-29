@@ -1,4 +1,4 @@
-package com.ithm.demo;
+package com.itjavaee.demo;
 
 import java.util.HashSet;
 import java.util.Objects;

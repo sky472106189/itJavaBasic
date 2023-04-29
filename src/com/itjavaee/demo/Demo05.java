@@ -1,4 +1,4 @@
-package com.ithm.demo;
+package com.itjavaee.demo;
 
 public class Demo05 {
     public static void main(String[] args) {

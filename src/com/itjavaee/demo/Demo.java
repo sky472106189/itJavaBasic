@@ -1,4 +1,4 @@
-package com.ithm.demo;
+package com.itjavaee.demo;
 
 /*
  * 学习十六进制赋值
