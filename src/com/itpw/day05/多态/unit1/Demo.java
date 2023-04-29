@@ -48,7 +48,7 @@ public class Demo {
         x.catchMouse(); //编译通过
 
         // 那为什么不直接Cat a3 = new Cat()呢?
-        // 后续讲解
+        // 后续讲解 因为要面向抽象编程 这是一种编程思想
 
         // 向下转型存在风险,但向上转型不存在风险
         /*
@@ -72,7 +72,7 @@ public class Demo {
             2.instanceof语法
                 (引用 instanceof 类型)
             3.instanceof运算符的运算结果只能是:true/false
-            4. (C instance of Cat)返回true 表示:C引用指向堆内存的java对
+            4. (C instanceof Cat)返回true 表示:C引用指向堆内存的java对
             象是一个Cat类型
 
             程序员养成好习惯:
