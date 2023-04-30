@@ -10,8 +10,8 @@ package com.itpw.day03.staticclass;
 *       方法体外声明的变量:成员变量
 *
 *       成员变量又分为:
-*           - 实例变量
-*           - 静态变量
+*           - 实例变量(堆中)
+*           - 静态变量(方法区)
 * */
 public class StaticDemo01 {
 

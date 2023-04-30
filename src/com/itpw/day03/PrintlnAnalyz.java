@@ -1,5 +1,8 @@
 package com.itpw.day03;
 
+/*
+* 模仿System.out.println();
+* */
 public class PrintlnAnalyz {
 
     static OutImitate OutImitate = new OutImitate();
@@ -23,7 +26,7 @@ public class PrintlnAnalyz {
 class OutImitate{
 
     // 实例方法 需要new对象才能用
-    // 可以加static修饰 但是不符合规范 因为调用此方法是通过【引用.】的方式来的
+    // 可以加static修饰 但是不符合规范 因为调用此方法要通过【引用.】的方式来的
     public void printlnImitate(){
         System.out.println("模仿System.out.println()");
     }

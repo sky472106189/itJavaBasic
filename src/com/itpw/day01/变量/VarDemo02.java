@@ -6,7 +6,7 @@ package com.itpw.day01.变量;
                     就近原则，哪个离我近，就访问哪个
 */
 public class VarDemo02 {
-    // 成员变量
+    // 实例变量
     int i = 500;
 
     public static void main(String[] args) {

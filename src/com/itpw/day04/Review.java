@@ -20,12 +20,11 @@ public class Review {
     public static void main(String[] args) {
         // m1()无法编译通过 因为静态无法引用非静态
         //m1();
+
         // 编译通过,因为先new了一个对象，通过对象调用实例方法
         new Review().m1();
 
         // 编译器会自动识别m2()静态方法，结果是Review.m2O();
         m2();
     }
-
-
 }

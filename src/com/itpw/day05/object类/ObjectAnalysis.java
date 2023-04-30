@@ -1,5 +1,8 @@
 package com.itpw.day05.object类;
 
+/*
+    Object源码初见
+*/
 public class ObjectAnalysis {
     // ObjectAnalysis默认继承根类Object，故继承了Object的toString()方法
     // 不过toString()方法是实例方法，需要先创建对象才能调用
@@ -45,7 +48,7 @@ public class Object {
         return (this == obj);
     }
 
-    // 已有对象A，想创建一个和A一模一样的对象，可以调用cloe()方法
+    // 已有对象A，想创建一个和A一模一样的对象，可以调用clone()方法
     // 底层调用C++
     @HotSpotIntrinsicCandidate
     protected native java.lang.Object clone() throws CloneNotSupportedException;
@@ -59,7 +62,6 @@ public class Object {
 
     @HotSpotIntrinsicCandidate
     public final native void notifyAll();
-
 
     public final void wait() throws InterruptedException {
         wait(0L);
@@ -84,6 +86,7 @@ public class Object {
         wait(timeoutMillis);
     }
 
+    //finalize()方法 day08.object类有解释。注意:JDK9就开始弃用了
     @Deprecated(since="9")
     protected void finalize() throws Throwable { }
 }*/

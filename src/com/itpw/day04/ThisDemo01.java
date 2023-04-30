@@ -6,6 +6,7 @@ public class ThisDemo01 {
 
     public void func(){
         System.out.println(this.name);// this可以省略
+        //System.out.println(name);// this可以省略,默认有this
     }
 
     // 编译报错,因为静态方法是采用【类名.】方式访问
@@ -23,6 +24,13 @@ class Animal{
     // 静态方法
     public static void func1(){
         // 编译报错 因为静态方法无法访问未new对象的成员变量
+        // 或者:因为name前面省略了this.而this和静态是冲突的
 //        System.out.println(name);
+    }
+
+    // 实例方法
+    public void fun2(){
+        System.out.println(this.name);
+        System.out.println(name);
     }
 }

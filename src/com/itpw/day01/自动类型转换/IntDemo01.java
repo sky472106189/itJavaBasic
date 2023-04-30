@@ -2,12 +2,12 @@ package com.itpw.day01.自动类型转换;
 
 /*
 * Java中,任何情况下,整数型的"字面量"默认被当做int类型处理,
-* 小数型的"字面量"默认被当做double类型处理
+*  小数型的"字面量"默认被当做double类型处理
 * */
 public class IntDemo01 {
     public static void main(String[] args) {
         // 存在自动类型转换 100的字面量会被当成int
-        // 然后转换为long类型
+        // 然后转换为long类型 代码等价于=long b = (long)100
         long b = 100;
 
         // 不存在自动类型转换 100L的字面量就是long
