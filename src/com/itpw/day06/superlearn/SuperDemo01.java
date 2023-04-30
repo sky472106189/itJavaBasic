@@ -26,7 +26,9 @@ package com.itpw.day06.superlearn;
         四、重要结论：当构造方法第一行既没有this()有没有super()的话，默认会有一个super();
             表示当前子类构造方法调用父类的构造方法，所以必须保证父类的无参构造方法是存在的
         五、super()和this()不能共存于一个构造方法中
-        六、无论如何，父类的构造方法都会执行
+        六、无论如何，父类的构造方法都会执行，但是注意调用构造方法
+            并不一定会创建对象,new 的时候才一定会创建对象
+        七、super跟this不同,this是一个引用,是一个地址,而super仅仅代表父类的特征,特征,特征!
 */
 public class SuperDemo01 {
     public static void main(String[] args) {
@@ -49,16 +51,18 @@ class B extends A{
     }
 }
 
-// 编译报错的，很显然C的无参调用了C的有参，而C的有参又调用C的无参，就想蛇吞蛇一样，没有尽头。且父类构造完全没法执行，故编译不通过
-//class C extends A{
-//    int id;
-//    public C(){
-//        this(1);
-//        System.out.println("C的无参构造方法");
-//    }
-//
-//    public C(int id){
-//        this();
-//        System.out.println("C的有参构造方法");
-//    }
-//}
+// 编译报错的，很显然C的无参调用了C的有参，而C的有参又调用C的无参，就想蛇吞蛇一样，没有尽头。
+// 且父类构造完全没法执行，故编译不通过
+/*
+class C extends A{
+    int id;
+    public C(){
+        this(1);
+        System.out.println("C的无参构造方法");
+    }
+
+    public C(int id){
+        this();
+        System.out.println("C的有参构造方法");
+    }
+}*/
