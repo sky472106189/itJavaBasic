@@ -62,6 +62,13 @@ class Account1{
 class CreditAccount1 extends Account1{
     private double credit;
 
+    // 通过子类此方法获取父类私有对象
+    // super.本质上就是父类的引用
+    public double getFathersBalance(){
+        double balance = super.getBalance();
+        return balance;
+    }
+
     public CreditAccount1(){}
 
     public double getCredit() {
