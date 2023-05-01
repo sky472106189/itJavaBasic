@@ -11,21 +11,18 @@ package com.itjavase.demo;
 public class StringDemo04 {
     public static void main(String[] args) {
         //使用 == 运算符比较两个引用时,它会比较内存中的地址。
-        String s = "abc";
+        String s1 = "abc";
         String s2 = "abc";
         String s3 = new String("abc");
-        System.out.println(s == s2);  // true
-        System.out.println(s == s3);  // false
+        System.out.println(s1 == s2);  // true
+        System.out.println(s1 == s3);  // false
         System.out.println(s2 == s3); // false
 
         String str1 = "abc";
         String str2 = "ab";
         String str3 = str2 + "c";
+        // str3指向堆空间一个地址，这个地址指向常量池的"abc"
         System.out.println(str1 == str3); // false
-
-        String st1 = "abc";
-        String st2 = "a" + "b" + "c";
-        System.out.println(st1 == st2); // true
     }
 
     // 常量与常量的拼接结果在常量池，原理是编译期优化。
@@ -64,7 +61,7 @@ public class StringDemo04 {
         System.out.println(s6 == s7);
     }
 
-   // 不使用final修饰，即为变量。如s3行的s1和s2，会通过new StringBuilder进行拼接
+   // 不使用final修饰，即为变量。如s3中的s1和s2，会通过new StringBuilder进行拼接
    // 使用final修饰，即为常量。会在编译器进行代码优化。
    public void test2() {
        String s0 = "beijing";
