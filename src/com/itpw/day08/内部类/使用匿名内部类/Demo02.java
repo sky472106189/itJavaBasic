@@ -3,6 +3,8 @@ package com.itpw.day08.内部类.使用匿名内部类;
 /*
 * 匿名内部类
 *   纯粹装逼的，学这个是为了看懂别人的代码。并不代表以后要用。
+*   在枚举类中可以使用匿名内部类，当枚举实现接口时，可以让不同的枚举用不同的方法体实现同一个接口
+*   参考day11.enum_learn.EnumDemo04.java
 * */
 public class Demo02 {
     public static void main(String[] args) {
