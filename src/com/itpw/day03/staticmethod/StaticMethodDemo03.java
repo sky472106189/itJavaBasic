@@ -19,18 +19,18 @@ public class StaticMethodDemo03 {
         System.out.println(this.name);// 不推荐
         System.out.println(name);// 推荐
         // this.staticName 可行，但是不推荐，对所有的静态变量都不应该使用this.
-        // 这和静态方法的调用要使用【类名.】是一个道理。
         System.out.println(this.staticName);    // 不推荐
-        System.out.println(StaticMethodDemo03.staticName);  // 推荐
+        System.out.println(staticName);  // 推荐
 
         // 同一个类中的实例方法，前面的this.可以省略，但是最好别省
         // 为什么？为了增强代码的可读性，让程序员知道func2()是一个实例方法
         this.func2();
 
-        // 同一个类中的静态方法，可以省略前面的【类名.】,但是最好别省
-        // 不省是为了增强代码的可读性
-        StaticMethodDemo03.staticFunc1(); //推荐
-        staticFunc2(); // 不推荐
+        // 同一个类中的静态方法，可以省略前面的【类名.】,但是最好省，因为我看一些源码调用本
+        // 类静态方法就是直接用的。其实这个并不是强制要求，我看源码也有用类名.的
+        // Integer的toString方法中实例就调用了静态，直接用的方法名
+        StaticMethodDemo03.staticFunc1(); //不推荐
+        staticFunc2(); // 推荐
 
         System.out.println("func1");
     }

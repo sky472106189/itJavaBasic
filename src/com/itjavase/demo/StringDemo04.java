@@ -10,6 +10,8 @@ package com.itjavase.demo;
 * */
 public class StringDemo04 {
     public static void main(String[] args) {
+        StringDemo04 sd = new StringDemo04();
+        sd.test2();
         //使用 == 运算符比较两个引用时,它会比较内存中的地址。
         String s1 = "abc";
         String s2 = "abc";
@@ -58,7 +60,7 @@ public class StringDemo04 {
         // false s5、s7 不同的对象实例
         System.out.println(s5 == s7);
         // false s6、s7 不同的对象实例
-        System.out.println(s6 == s7);
+            System.out.println(s6 == s7);
     }
 
    // 不使用final修饰，即为变量。如s3中的s1和s2，会通过new StringBuilder进行拼接
