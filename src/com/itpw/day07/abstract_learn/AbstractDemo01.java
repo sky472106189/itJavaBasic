@@ -33,7 +33,7 @@ abstract class Account {
     // 结论：每一个类无论抽象与否都默认有一个无参构造
     //public Account(String name){}
 
-    // 抽象方法
+    // 非抽象方法
     public void doOther(){
     };
 
