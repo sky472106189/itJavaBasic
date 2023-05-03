@@ -1,0 +1,26 @@
+
+1.三个类的对比:String、StringBuffer、StringBuilder
+ > String:不可变的字符序列;底层使用char[](jdk8及之前),底层使用byte[](jdk9及之后)
+ > StringBuffer:可变的字符序列;JDK1.0声明,线程安全的,效率低;底层使用char[](jdk8及之前),底层使用byte[](jdk9及之后)
+ > StringBuilder:可变的字符序列;JDK1.5声明,线程不安全的,效率高;底层使用char[](jdk8及之前),底层使用byte[](jdk9及之后)
+
+2.StringBuffer/StringBuilder可变性分析(基于JDK1.8的源码)
+ > String中的 char[] value用final修饰
+ String s1 = new String();// char[] value = new char[0];
+ String s2 = new String("abc");// char[] value = new char[]{'a','b','c'};
+
+ > StringBuilder中 内部属性有
+         char[] value;// 存储字符序列
+         int count;// 实际存储的字符的个数
+
+ // char[] value = new char[16]; 无参构造 初始化容量16的char数组
+ StringBuilder sb1 = new StringBuilder();
+ // char[] value = new char[16+"abc".length()] 有参构造 构造初始化容量为传入值长度并+16的char数组
+ StringBuilder sb2 = new StringBuilder("abc");
+
+ sb1.append("ac");// value[0] = 'a';value[1] = 'c';
+ sb1.append("b");// value[2] = 'b';
+ // 可变体现在始终操作一个数组 value[]{'a','c','b'};
+ String s1 = "ac"; // new char[]{'a','c'};(final修饰)
+ String s1 = "b";// new char[1]{'b'};(final修饰)
+ // 不可变体现在每次赋值都会新创建一个字符数组
