@@ -6,8 +6,8 @@ package com.itpw.day10.stringbuffer;
         java.lang.StringBuffer
         java.lang.StringBuilder
     Q:为什么拼接更好？
-    分析：StringBuffer构造方法底层是操作byte[] value。而String构造方法底层是操作private final byte[] value;
-    String一旦被赋值，就是final，无法被修改的。而StringBuffer的append可以采用自带的数组拷贝，一旦容量不够就数组拷贝扩容
+    分析：StringBuffer构造方法底层是操作byte[] value(无final static 权限修饰符)。而String构造方法底层是操作private final byte[] value;
+    String一旦被赋值，就是final，无法被修改的。而StringBuffer可以修改，并且append可以采用自带的数组拷贝，一旦容量不够就数组拷贝扩容
     而扩容调用正是Arrays.copyOf()方法
 
     补充：jdk1.8之前，String底层是用char[ ]型数组存储的，直到jdk1.9才改为byte[ ]型数组。

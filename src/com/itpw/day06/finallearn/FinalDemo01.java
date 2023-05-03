@@ -6,6 +6,7 @@ package com.itpw.day06.finallearn;
         2.1、final修饰的类无法被继承，比如String类
         2.2、final修饰的方法无法被重写
         2.3、final修饰的局部变量，只能赋一次值，不允许更改
+            关于final修饰的变量可以参考itpw.day11.enum_learn.EnumDemo01.java 参考
 */
 public class FinalDemo01 extends B{
 

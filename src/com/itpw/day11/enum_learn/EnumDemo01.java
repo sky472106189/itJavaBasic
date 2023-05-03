@@ -2,6 +2,7 @@ package com.itpw.day11.enum_learn;
 
 /*
     (了解)不使用enum，自定义枚举类
+        主要学习final以及static的使用场景。
  */
 public class EnumDemo01 {
     public static void main(String[] args) {

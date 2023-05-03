@@ -2,10 +2,9 @@ package com.itpw.day06.finallearn;
 
 /*
     final修饰引用
-        final修饰的变量只能赋一次值
-        "引用"也是一个变量
+        final修饰的变量只能赋一次值，"引用"也是一个变量
     final指向引用后，便不可再更改。但还是会随着存在的方法的消失而被垃圾回收器回收。
-    虽然final不能修改引用，但是引用内部的数据可以更改
+    虽然final不能修改引用，但是引用内部的数据可以更改。
 */
 public class FinalDemo02 {
 
