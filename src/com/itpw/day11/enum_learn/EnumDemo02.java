@@ -2,7 +2,7 @@ package com.itpw.day11.enum_learn;
 /*
     Java 中的每一个枚举都继承自 java.lang.Enum 类
     当定义一个枚举类型时，每一个枚举类型成员都可以看作是 Enum 类的实例，
-    大部分枚举成员默认都被 public、final、 static 修饰，其中枚举类中的变量默认final修饰
+    大部分枚举成员默认都被 public、final、 static 修饰，其中枚举类中的变量没有默认修饰
     当使用枚举类型成员时，直接使用枚举名称调用成员即可。
     所有枚举实例都可以调用 Enum 类的方法，常用方法有：1、values() 2、valueOf() 3、name() 4、ordinal()
 
@@ -48,12 +48,12 @@ enum Season1{
     AUTUMN ("秋天","秋高气爽"),
     WINTER ("冬天","冰天雪地");
 
-    // 默认有final修饰了，但是权限修饰符可以改
+    // 枚举类中，通常变量私有化且只提供get方法
     private String seasonName;
     private String seasonDesc;
 
-    // 2.私有化构造器，并给元素赋值
-    Season1(String seasonName,String seasonDesc){
+    // 2.默认有private，私有化构造器，并给元素赋值
+    private Season1(String seasonName,String seasonDesc){
         this.seasonName = seasonName;
         this.seasonDesc = seasonDesc;
     }
