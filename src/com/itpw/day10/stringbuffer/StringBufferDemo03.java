@@ -1,7 +1,5 @@
 package com.itpw.day10.stringbuffer;
 
-import com.itpw.day08.访问控制权限.modify01.F;
-
 /*
 * StringBuffer执行append方法过多后 导致OOM堆内存溢出 异常
 * 为什么？

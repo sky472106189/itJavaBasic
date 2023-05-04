@@ -1,4 +1,4 @@
-package com.itjavase.demo;
+package com.itpw.day10.string;
 
 /*
 * - 在JDK1.6及之前,字符串常量池存放在方法区中。到JDK1.7之后,就从方法区中移除了,而存放在堆中
@@ -8,9 +8,9 @@ package com.itjavase.demo;
 * 摘自https://blog.csdn.net/weixin_53170971/article/details/127215939
 * 摘自https://blog.csdn.net/qq_27093465/article/details/106767042
 * */
-public class StringDemo04 {
+public class StringDemo02 {
     public static void main(String[] args) {
-        StringDemo04 sd = new StringDemo04();
+        StringDemo02 sd = new StringDemo02();
         sd.test2();
         //使用 == 运算符比较两个引用时,它会比较内存中的地址。
         String s1 = "abc";

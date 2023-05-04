@@ -30,7 +30,7 @@ public class StringBufferDemo02 {
         // 指定初始化容量大小的StringBuffer对象
         StringBuffer sb1 = new StringBuffer(100);
 
-        // 2023.5.1待解决的问题：这里会报错 OOM
+        // 2023.5.1待解决的问题：这里会报错 OOM, StringBufferDemo03有解决
         //java.lang.OutOfMemoryError: Java heap space
 /*        while(true){
             sb1.append(1);
