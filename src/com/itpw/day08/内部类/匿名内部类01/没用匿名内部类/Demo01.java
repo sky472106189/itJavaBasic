@@ -1,4 +1,4 @@
-package com.itpw.day08.内部类.没用匿名内部类;
+package com.itpw.day08.内部类.匿名内部类01.没用匿名内部类;
 
 /*
     内部类：
@@ -35,6 +35,8 @@ public class Demo01 {
 interface Compute{
     int sum(int a,int b);
 }
+
+// 没用匿名内部类 这个实现类就不能省
 class ComputeImpl implements Compute{
     @Override
     public int sum(int a, int b) {
