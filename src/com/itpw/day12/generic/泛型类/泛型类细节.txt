@@ -1,0 +1,5 @@
+- 子类也是泛型类，子类和父类的泛型类型要一致
+class Child<T> extends Father<T>
+
+- 子类不是泛型类，父类是泛型类。那么父类要明确泛型的数据类型
+class Child extends Father<String>
