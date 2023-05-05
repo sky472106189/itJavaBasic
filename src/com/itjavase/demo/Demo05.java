@@ -1,5 +1,8 @@
 package com.itjavase.demo;
 
+/*
+* 静态方法和实例方法问题
+* */
 public class Demo05 {
     public static void main(String[] args) {
         Peter.func1();
