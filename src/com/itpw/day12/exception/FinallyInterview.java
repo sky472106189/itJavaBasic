@@ -4,6 +4,8 @@ package com.itpw.day12.exception;
 * Finally面试题
 *   基本数据类型(包装类)finally不会影响数据
 *   引用数据类型会被finally影响
+*
+* 疑惑可以去看out文件中的.class字节码，反编译后的结果
 * */
 public class FinallyInterview {
     public static void main(String[] args) {
