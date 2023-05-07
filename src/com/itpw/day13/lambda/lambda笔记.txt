@@ -1,0 +1,10 @@
+1.Lambda表达式的使用举例:
+    (o1,o2) -> Integer.compare(o1,o2);
+
+2.Lambda表达式的格式举例:
+ lambda形参列表 -> lambda体
+
+3.lambda语法:
+->:lambda操作符或箭头操作符
+->的右边:lambda形参列表,对应着要重写的接口中的抽象方法的形参列表。
+->的右边：lambda体，对应着接口的实现类要重写的方法的方法体。
