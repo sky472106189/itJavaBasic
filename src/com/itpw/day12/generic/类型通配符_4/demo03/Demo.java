@@ -1,6 +1,6 @@
-package com.itpw.day12.generic.类型通配符.demo03;
+package com.itpw.day12.generic.类型通配符_4.demo03;
 
-import com.itpw.day12.generic.类型通配符.demo02.Box;
+import com.itpw.day12.generic.类型通配符_4.demo02.Box;
 
 /*
     类型通配符的上限

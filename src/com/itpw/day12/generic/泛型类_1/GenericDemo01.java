@@ -1,4 +1,4 @@
-package com.itpw.day12.generic.泛型类;
+package com.itpw.day12.generic.泛型类_1;
 
 /*
  自定义泛型类

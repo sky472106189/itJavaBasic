@@ -1,4 +1,4 @@
-package com.itpw.day12.generic.泛型方法;
+package com.itpw.day12.generic.泛型方法_2;
 
 import java.util.ArrayList;
 import java.util.Random;

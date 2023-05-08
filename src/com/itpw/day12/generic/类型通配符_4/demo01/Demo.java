@@ -1,4 +1,4 @@
-package com.itpw.day12.generic.类型通配符.demo01;
+package com.itpw.day12.generic.类型通配符_4.demo01;
 
 /*
     1、类型通配符一般是使用'?'代替具体的类型实参

@@ -1,4 +1,4 @@
-package com.itpw.day12.generic.泛型接口;
+package com.itpw.day12.generic.泛型接口_3;
 
 /*
     泛型接口的定义语法:

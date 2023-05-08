@@ -1,4 +1,4 @@
-package com.itpw.day12.generic.泛型类;
+package com.itpw.day12.generic.泛型类_1;
 
 import java.util.ArrayList;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package com.itpw.day12.generic.类型擦除;
+package com.itpw.day12.generic.类型擦除_5;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.itpw.day12.generic.类型通配符.demo02;
+package com.itpw.day12.generic.类型通配符_4.demo02;
 
 /*
     类型通配符的上限

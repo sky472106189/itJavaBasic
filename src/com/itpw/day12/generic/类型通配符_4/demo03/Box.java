@@ -1,4 +1,4 @@
-package com.itpw.day12.generic.类型通配符.demo02;
+package com.itpw.day12.generic.类型通配符_4.demo03;
 
 public class Box <E>{
     private E data;
