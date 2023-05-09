@@ -10,6 +10,8 @@ package com.itpw.day12.generic.泛型接口_3;
     泛型接口的使用
         1、实现类不是泛型类时，实现类要明确泛型类型
         2、实现类也是泛型类时，实现类和接口类的泛型类型要一致
+
+    泛型接口一般是父类什么泛型，实现类就什么泛型
 */
 public class GenericInterface01 {
     public static void main(String[] args) {
@@ -22,7 +24,7 @@ interface FlyAble<T>{
     void fly();
 }
 
-// 泛型接口实现类，必须指明泛型类型
+// 泛型接口实现类，接口可以指定，或缺省
 class Bird implements FlyAble<String> {
     @Override
     public void fly() {
@@ -30,6 +32,7 @@ class Bird implements FlyAble<String> {
     }
 }
 
+// 接口若使用泛型标识，则实现类也需要使用同样标识，并且只能多不能少
 class BirdGeneric<T,E> implements FlyAble<T> {
     private T name;
     private E id;

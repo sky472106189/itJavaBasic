@@ -32,7 +32,7 @@ class ProductGetter<T>{
     }
 
     public T getProduct(){
-        T product = list.get(random.nextInt(list.size()));
+        T product = list.get(0);
         return product;
     }
 }

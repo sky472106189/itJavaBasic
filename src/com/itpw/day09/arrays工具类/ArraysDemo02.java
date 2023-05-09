@@ -1,6 +1,7 @@
 package com.itpw.day09.arrays工具类;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 /*
 * Arrays.sort()操作自定义对象时的注意事项
@@ -19,14 +20,14 @@ public class ArraysDemo02 {
 
 
         // 方式二 直接使用匿名内部类 Comparator接口(常用)
-        // Arrays.sort(shits, new Comparator<DogShit>() {
-        //     @Override
-        //     public int compare(DogShit o1, DogShit o2) {
-        //         // return o1.getWeight() - o2.getWeight(); // 升序
-        //         return o2.getWeight() - o1.getWeight();// 降序
-        //     }
-        // });
-        // System.out.println(Arrays.toString(shits));
+        Arrays.sort(shits, new Comparator<DogShit>() {
+            @Override
+            public int compare(DogShit o1, DogShit o2) {
+                return o1.getWeight() - o2.getWeight(); // 升序
+                // return o2.getWeight() - o1.getWeight();// 降序
+            }
+        });
+        System.out.println(Arrays.toString(shits));
 
         Arrays.sort(shits,(o1,o2)->o1.getWeight() - o2.getWeight());
         System.out.println(Arrays.toString(shits));

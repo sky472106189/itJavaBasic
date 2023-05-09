@@ -1,26 +1,23 @@
 package com.itpw.day12.generic.泛型方法_2;
 
-/*
-* 泛型方法可变参数
-*   语法：
-*   public <E> void print(E... e){
-*       类体;
-*   }
-* */
+// 练习
 public class GenericMethod02 {
     public static void main(String[] args) {
-        // 调用泛型可变参数方法
-        Generic.doSome(1,2,3,4);
-        Generic.doSome('A','B','C','D');
-        Generic.doSome("我","是","中","国","人");
+        // T->String;R->Integer;M->Double;
+        Apple<String, Integer, Double> apple = new Apple<>();
+        apple.doSome(10);// Integer
+        apple.doSome("123");// String
     }
 }
 
-class Generic{
+class Apple<T, R, M> {
+    public <E> void doSome(E e) {
+        System.out.println(e.getClass().getSimpleName());
+    }
 
-    public static <E> void doSome(E... e){
-        for (int i = 0; i < e.length; i++) {
-            System.out.println(e);
-        }
+    //错误 因为U没有声明在类，也没有泛型方法标识<U>
+    // public void eat(U u){}
+
+    public void fly(R r) {
     }
 }
