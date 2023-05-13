@@ -1,10 +1,7 @@
 package com.itjavase.homework;
 
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
-import java.util.function.BiConsumer;
 
 /*
 - 使用TreeMap集合保存学生对象信息,要求创建不低于五个学生对象
@@ -13,11 +10,54 @@ import java.util.function.BiConsumer;
 */
 public class Test {
     public static void main(String[] args) {
-        Map<Student,Integer> map = new HashMap<>();
-        map.put(new Student(),1);
+        Map<String, Student> map1 = new HashMap<>();
+        map1.put("java基础", new Student("夏哥", 88));
+        map1.put("javaSE", new Student("杨宁", 18));
 
-        map.forEach((k,v)->{
-            System.out.println(k+"--"+v);
-        });
+        Map<String, Student> map2 = new HashMap<>();
+        map2.put("javaSE", new Student("孙晓威", 99));
+        map2.put("javaWeb", new Student("张三", 30));
+        map2.put("java框架", new Student("李四", 32));
+
     }
 }
+
+class Student {
+    // 姓名
+    private String name;
+    // 年龄
+    private int age;
+
+    public Student() {
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
+    public Student(String name,  int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+
