@@ -5,6 +5,7 @@ import java.util.List;
 
 /*
 * 初窥泛型
+*
 * */
 public class GenericDemo01 {
     public static void main(String[] args) {

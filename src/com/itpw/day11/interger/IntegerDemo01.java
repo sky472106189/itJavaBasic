@@ -2,6 +2,8 @@ package com.itpw.day11.interger;
 
 /*
     java中为8种基本数据类型准备了8种包装类型，包装类型属于引用数据类型，父类Object类
+
+    自动装箱和自动拆箱  new ArrayList().add(123);// 将int=123封装为Integer
 */
 public class IntegerDemo01 {
     public static void main(String[] args) {

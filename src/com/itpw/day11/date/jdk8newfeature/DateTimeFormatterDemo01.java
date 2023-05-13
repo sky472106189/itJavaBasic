@@ -14,14 +14,14 @@ public class DateTimeFormatterDemo01 {
         // 2、新建LocalDateTime获取时间
         LocalDateTime now = LocalDateTime.now();
 
-        // 3.1、正向格式化
+        // 3.1、正向格式化 LocalDateTime -> String
         String f1 = formatter.format(now);
         System.out.println(f1);
-        // 3.1、反向格式化
+        // 3.2、反向格式化 LocalDateTime -> String
         String f2 = now.format(formatter);
         System.out.println(f2);
 
-        // 4、字符串 转位 LocalDateTime
+        // 4、字符串 转为 LocalDateTime
         // String dateStr = "1900-1-1 11:11:11"; 报错
         String dateStr = "1900-01-01 11:11:11";
         LocalDateTime parse = LocalDateTime.parse(dateStr, formatter);

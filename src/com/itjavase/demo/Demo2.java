@@ -43,8 +43,18 @@ public class Demo2 {
         // 两个真才为真,否则为0
         // 0001 & 1000 = 0000
         System.out.println(a1&a2);
+
+        int i1 = 9;  //1001
+        int k1 = 10; //1010
+        //  1001
+        // &1010
+        //  1000
+        int res1 = i1&k1; // res = 8
+        System.out.println(res1);
+
         // 一个真就为真
         // 0001 | 1000 = 1001
         System.out.println(a1|a2);
+
     }
 }

@@ -1,16 +1,17 @@
 package com.itpw.day09.array;
 
-/***
- * 关于一位数组的扩容 System.arraycopy(五个形参)
- *  数组长度不可变，一旦满了，就需要扩容
- *      java底层操作方式：
- *          先新建一个大数组，然后将小容量数组的数据全部拷贝至大数组中，时间复杂度O(n)
+/*
+ 关于一位数组的扩容 System.arraycopy(五个形参)
+  数组长度不可变，一旦满了，就需要扩容
+      java底层操作方式：
+          先新建一个大数组，然后将小容量数组的数据全部拷贝至大数组中，时间复杂度O(n)
  */
 public class ArrayDemo05 {
     public static void main(String[] args) {
         // java中数组的拷贝
         // native修饰，调用的是C++方法
-/*        public static native void arraycopy(Object src,  int  srcPos,
+        /*
+        public static native void arraycopy(Object src,  int  srcPos,
                                                 Object dest, int destPos,
                                                 int length);*/
 

@@ -18,7 +18,6 @@ public class ArraysDemo02 {
         // Arrays.sort(shits);
         // System.out.println(Arrays.toString(shits));
 
-
         // 方式二 直接使用匿名内部类 Comparator接口(常用)
         Arrays.sort(shits, new Comparator<DogShit>() {
             @Override
@@ -34,10 +33,6 @@ public class ArraysDemo02 {
         Arrays.sort(shits,(o1,o2)->o2.getWeight() - o1.getWeight());
         System.out.println(Arrays.toString(shits));
 
-        /*TODO:Comparable接口 和 Comparator接口的区别是什么?
-        * 1.Comparable——able 才能。 可以理解为这个类天生就有了这个功能
-        * 2.Comparator——tor(constructor) 建造者，可以理解为在新建的时候，才赋予的能力。
-        * */
     }
 }
 
