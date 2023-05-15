@@ -1,11 +1,14 @@
 package com.itpw.day14.io.文件专属_掌握_1.字节流.fis_1;
 
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /*
     java.io.FileInputStream
+        0、以内存为基准，把磁盘中的文件的数据以字节方式读入内存
         1、文件字节输入流，万能的，任何类型的文件都可以采用这个流来读
         2、字节的方式，完成输入的操作，完成读的操作。(硬盘->内存)
 
@@ -42,6 +45,5 @@ public class FileInputStreamDemo01 {
                 }
             }
         }
-
     }
 }

@@ -7,7 +7,6 @@ import java.io.IOException;
 /*
     FileReader:
         文件字符输入流，只能读取普通文本(文本不仅限于txt后缀)
-
  */
 public class FileReaderDemo01 {
     public static void main(String[] args) {
