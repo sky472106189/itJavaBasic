@@ -9,7 +9,9 @@ public class FileDemo04 {
 
     public static void main(String[] args) {
         // 制定一个目录，查看目录下是否有某个文件
-        searchFile(new File("C:\\Users\\15173\\IdeaProjects\\itJavaBasic\\src\\com\\itpw\\day14\\io流\\resource"), "temp.txt");
+        searchFile(new File
+                ("C:\\Users\\15173\\IdeaProjects\\itJavaBasic\\src\\com\\itpw\\day14\\io流\\resource"),
+                "temp.txt");
     }
 
     public static void searchFile(File dir, String fileName) {

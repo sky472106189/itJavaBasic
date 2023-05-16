@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 
 /*
     关于Stream流的map
-        .map:抽取对象集合中的某个元素组成集合
+        map函数的作用就是针对管道流中的每一个数据元素进行转换操作。
 */
 public class StreamDemo05 {
     public static void main(String[] args) {
