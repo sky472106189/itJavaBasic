@@ -1,4 +1,4 @@
-package com.itpw.day15.thread;
+package com.itpw.day15.thread.a_thread;
 
 /*
 * 线程的第一种实现方式，继承Thread类

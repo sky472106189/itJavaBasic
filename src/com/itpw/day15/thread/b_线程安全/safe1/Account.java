@@ -1,11 +1,10 @@
-package com.itpw.day15.thread.线程安全.unsafe;
+package com.itpw.day15.thread.b_线程安全.safe1;
 
-/**
- * 银行账户
- */
 public class Account {
     private String actNo;
     private double balance;
+
+    Object obj = new Object();
 
     public Account(String actNo, double balance) {
         this.actNo = actNo;
@@ -28,19 +27,18 @@ public class Account {
         this.balance = balance;
     }
 
-    // 取款方法
-    public void withDraw(double money){
-        // 取款之前的余额
+    // 在实例方法使用synchronized
+    // 缺点：synchronized出现在这，锁的一定是this，不够灵活。且整个方法体都被锁住了，
+    // 扩大了同步范围，导致效率较低
+    // 优点：实现简单，需要同步的方法使用synchronized就好
+    public synchronized void withDraw(double money){
         double before = this.getBalance();
-        // 取款后的余额
         double after = before - money;
-        // 模拟网络波动，延迟100ms更新余额
         try {
             Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        // 更新余额
         this.setBalance(after);
     }
 }

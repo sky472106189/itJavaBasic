@@ -1,4 +1,4 @@
-package com.itpw.day15.thread.线程安全.unsafe;
+package com.itpw.day15.thread.b_线程安全.unsafe;
 
 /*
     模拟多线程对同一银行账户取款，出现线程安全问题

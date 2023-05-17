@@ -1,9 +1,9 @@
-package com.itpw.day15.thread;
+package com.itpw.day15.thread.a_thread;
 
 /*
 * 如何提前终止线程执行
 * 1、stop()方法，已过时，不推荐，强行杀死线程，极易导致数据丢失
-* 2、用标志位去终止线层执行
+* 2、用标志位去终止线程执行
 * */
 public class ThreadDemo05 {
     public static void main(String[] args) {

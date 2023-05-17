@@ -1,4 +1,4 @@
-package com.itpw.day15.thread;
+package com.itpw.day15.thread.a_thread;
 
 /*
     java的线程调度模型是抢占式调度（基于优先级），除此之外还有一种是均分式调度(平均时间片)
@@ -32,7 +32,7 @@ public class ThreadDemo06 {
         t.start();
 
         try {
-            // 合并线程，当前线程阻塞，t线程执行，之后才轮到当前线程
+            // 合并线程，当前线程(main)阻塞，t线程执行，之后才轮到当前线程
             // 栈并未合并，只是让栈有了顺序
             t.join();
         } catch (InterruptedException e) {

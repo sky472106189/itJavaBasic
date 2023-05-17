@@ -1,4 +1,4 @@
-package com.itpw.day15.thread;
+package com.itpw.day15.thread.a_thread;
 
 /*
     提前唤醒线程

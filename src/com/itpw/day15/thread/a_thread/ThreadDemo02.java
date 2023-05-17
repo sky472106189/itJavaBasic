@@ -1,4 +1,4 @@
-package com.itpw.day15.thread;
+package com.itpw.day15.thread.a_thread;
 
 /*
 * 线程的第二种方法 实现Runnable接口
