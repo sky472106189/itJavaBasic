@@ -6,7 +6,8 @@ public class ExceptionDemo04 {
         doSome();
 
         //方式二
-        /*try {
+        /*
+        try {
             doSome();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

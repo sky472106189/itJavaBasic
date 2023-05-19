@@ -10,7 +10,6 @@ public class Demo {
         // 只有一个银行账户
         Account account = new Account("6085",10000D);
 
-        //
         Thread t1 = new AccountThread(account);
         Thread t2 = new AccountThread(account);
         t1.setName("t1");

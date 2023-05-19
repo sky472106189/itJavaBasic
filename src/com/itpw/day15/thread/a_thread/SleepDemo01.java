@@ -7,6 +7,7 @@ package com.itpw.day15.thread.a_thread;
         2、参数是毫秒
         3、作用：让当前线程进入休眠，既“阻塞状态”，放弃占有的CPU时间片，让给其他线程
         4、可以实现周期执行某方法
+        5、并没有释放锁
 */
 public class SleepDemo01 {
     public static void main(String[] args) throws InterruptedException {

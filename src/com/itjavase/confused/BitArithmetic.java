@@ -1,8 +1,15 @@
 package com.itjavase.confused;
 
 /*
- * 位运算
- * */
+    位运算
+     关于二进制补码加减法，加法直接做加就好
+     减法:6-3，把3的补码写出来，然后全部位(包括符号位)取反末位+1，得到(-3)补，式子化为 6+(-3)补，减法变加法。
+
+    能得对应二进制
+    Integer.toBinaryString(int k);
+    Double.toHexString(double d);
+    Float.toHexString(float f)
+*/
 public class BitArithmetic {
     public static void main(String[] args) {
         System.out.println("位移运算");
@@ -10,7 +17,9 @@ public class BitArithmetic {
         // 0011 左移2位 1100 = 8+4 = 12
         System.out.println(i<<2);
 
+
         int k = -1;
+        System.out.println("-1对应二进制补码:"+Integer.toBinaryString(k));
         //          1000,0000,0000,0000,0000,0000,0000,0001 (原码) = -1
         //          1111,1111,1111,1111,1111,1111,1111,1111 (补码)
         // k<<1     1111,1111,1111,1111,1111,1111,1111,1110 (补码) 算术移位
@@ -20,7 +29,7 @@ public class BitArithmetic {
         System.out.println(k<<1);   //-2
         System.out.println(k>>1);   //-1
 
-        System.out.println("异或运算");
+        System.out.println("————————异或运算——————————");
         int m1 = 3;
         int m2 = 4;
         // ^ 异或 同0异1

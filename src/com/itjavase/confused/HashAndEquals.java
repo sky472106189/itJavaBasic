@@ -5,19 +5,19 @@ import java.util.Objects;
 import java.util.Set;
 
 /*
-* 如果重写hashCode方法,集合里面的对象属性被修改后。hash值是会改变的。remove就会失败，造成内存泄漏
-* 如果没有重写hashCode方法，集合里面的对象属性被修改后。hash值是不会改变的。remove就会成功，不会造成内存泄漏。
-* tips:问题的关键就是变量修改导致hashCode返回值也修改，使删除失败了。
-*      那么日常开发中，如果hashCode中某个参数会在未来被修改，那么就不要用这个值参与hashCode函数即可
-*      比如本例就是因为name属性修改，而name又参与了hashCode所以删除失败了。
-*      那么我们只需要修改hashCode函数，只让id参与hashCode函数即可
-* */
+    如果重写hashCode方法,集合里面的对象属性被修改后。hash值是会改变的。remove就会失败，造成内存泄漏
+    如果没有重写hashCode方法，集合里面的对象属性被修改后。hash值是不会改变的。remove就会成功，不会造成内存泄漏。
+    tips:问题的关键就是变量修改导致hashCode返回值也修改，使删除失败了。
+         那么日常开发中，如果hashCode中某个参数会在未来被修改，那么就不要用这个值参与hashCode函数即可
+         比如本例就是因为name属性修改，而name又参与了hashCode所以删除失败了。
+         那么我们只需要修改hashCode函数，只让id参与hashCode函数即可
+*/
 public class HashAndEquals {
     public static void main(String[] args) {
-        Person p1 = new Person(1,"张三");
-        Person p2 = new Person(2,"李四");
+        PersonA p1 = new PersonA(1,"张三");
+        PersonA p2 = new PersonA(2,"李四");
 
-        Set<Person> set = new HashSet<>();
+        Set<PersonA> set = new HashSet<>();
         System.out.println("p1的hash="+p1.hashCode());    //775881
         System.out.println("p2的hash="+p2.hashCode());    //843084
         set.add(p1);
@@ -31,14 +31,14 @@ public class HashAndEquals {
         System.out.println("p1的hash="+p1.hashCode());
         System.out.println("p2的hash="+p2.hashCode());   //843084
         set.remove(p1);
-        set.add(new Person(1,"王五"));
-        for (Person p : set) {
+        set.add(new PersonA(1,"王五"));
+        for (PersonA p : set) {
             System.out.println(p);
         }
     }
 }
 
-class Person{
+class PersonA{
     public int id;
     public String name;
 
@@ -49,19 +49,19 @@ class Person{
         return Objects.hash(id);
     }
 
-    public Person(int id, String name) {
+    public PersonA(int id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public Person() {
+    public PersonA() {
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
+        PersonA person = (PersonA) o;
         return id == person.id && Objects.equals(name, person.name);
     }
 

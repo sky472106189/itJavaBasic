@@ -4,10 +4,11 @@ import java.util.HashMap;
 import java.util.Objects;
 
 /*
-* HashMap中数据+链表的结构
-*   hashcode比较的值就是数组下标，如果下标相同，接着执行equals()方法，如果返回false(不相同)
-* 则和同下标位置元素成为链表，注意当链表长度超过8时,链表转换为红黑树。
-* */
+HashMap中数据+链表的结构
+  hashcode比较的值就是数组下标，如果下标相同，接着执行equals()方法，如果返回false(不相同)
+则和同下标位置元素成为链表，注意当链表长度超过8时,链表转换为红黑树。
+more details can reference
+*/
 public class AboutHashMap{
     public static void main(String[] args) {
         HashMap<Animal,Integer> map = new HashMap<>();

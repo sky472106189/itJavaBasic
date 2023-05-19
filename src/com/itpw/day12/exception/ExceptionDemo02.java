@@ -1,5 +1,9 @@
 package com.itpw.day12.exception;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /*
    1、Throwable下有两个分支:1、Error(不可处理，直接退出JVM) 2、Exception(可处理)
        Exception下有两个分支:
@@ -30,7 +34,25 @@ package com.itpw.day12.exception;
 
 */
 public class ExceptionDemo02 {
-    public static void main(String[] args){
+    public static void main(String[] args) throws ParseException {
+        /*
+        * 关于编译时异常和运行时异常是否会影响后续代码执行的演示
+        * */
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        try {
+            Date parse = sdf.parse("2023-11-11");
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        System.out.println("使用try-catch，发生Exception的异常是会执行此行的");
+
+        SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date parse1 = sdf1.parse("2023-11-11");
+        System.out.println("直接throws的话，发生Exception的异常不会执行此行");
+
+        // Object s = null;
+        // if(s.equals(null));
+        // System.out.println("发生RunTimeException不会执行此行");
 
     }
 }

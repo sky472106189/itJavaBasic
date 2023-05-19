@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 上面一行是xml的文档声明，固定不变 -->
+<!-- xml文档中，要求只能有一个唯一的根标签 -->
+<!-- 定义父标teachers -->
+<head>
+    <teachers size="3">
+        <teacher dept="1204" seniority="12">
+            <name>张三</name>
+            <height>168</height>
+            <weight>132</weight>
+            <desc> 1&lt;2 </desc>
+            <desc2> <![CDATA[< > & '"]]> </desc2>
+        </teacher>
+        <teacher dept="1102" seniority="23">
+            <name>李四</name>
+            <height>172</height>
+            <weight>114</weight>
+        </teacher>
+    </teachers>
+</head>

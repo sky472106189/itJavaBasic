@@ -49,9 +49,9 @@ interface Jdk8and9NewFeature1{
     }
 
     // 私有方法(JDK9才有)
-    private void test2(){
-        System.out.println("私有方法");
-    }
+    // private void test2(){
+    //     System.out.println("私有方法");
+    // }
 
     //静态方法(JDK8)
     static void test3(){
@@ -72,9 +72,9 @@ interface Jdk8and9NewFeature2{
     }
 
     // 私有方法(JDK9才有)
-    private void test2(){
-        System.out.println("私有方法2");
-    }
+    // private void test2(){
+    //     System.out.println("私有方法2");
+    // }
 
     //静态方法(JDK8)
     static void test3(){

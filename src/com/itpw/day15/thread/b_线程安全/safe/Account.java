@@ -53,7 +53,7 @@ public class Account {
         // 所以会出现同步等待，直到先进入的执行结束，等待的才能进入。
         synchronized(this){ // 能实现
         // synchronized("abc"){ // 能实现同步，因为"abc"在字符串常量池中
-        // synchronized(Integer.valueOf(-128)){ // 能实现-128到127的Integer对象统一放在堆内存的整数型常量池中
+        // synchronized(Integer.valueOf(-128)){ // 能实现-128到127的Byte,Short,Integer,Long对象统一放在堆内存的整数型常量池中
         // synchronized(obj){ // 同一对象中的实例变量也能实现同步
             double before = this.getBalance();
             double after = before - money;

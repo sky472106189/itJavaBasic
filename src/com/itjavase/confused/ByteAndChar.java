@@ -2,8 +2,6 @@ package com.itjavase.confused;
 
 /*
     char字符大小：Java 团队使用 unicode 作为编码，一个 char 作为 2 个字节来存储。
-    如果使用 ASCII 编码集，那么 char 占用一个字节，
-    如果使用 UTF-8 编码格式呢？UTF-8 是不定长编码，编码的长度是动态的，所以不一定。
 */
 public class ByteAndChar {
     public static void main(String[] args) {

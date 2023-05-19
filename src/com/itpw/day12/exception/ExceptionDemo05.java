@@ -4,9 +4,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 /*
-* try-catch捕捉到异常后，后续代码执行与否
-*   try语句块中的某一行出现异常，该行后面的代码不会执行。
-* */
+    关于try-catch捕捉到异常后，后续代码执行与否
+        try语句块中的某一行出现异常，该行后面的代码不会执行。
+*/
 public class ExceptionDemo05 {
     public static void main(String[] args) {
         System.out.println("main begin");

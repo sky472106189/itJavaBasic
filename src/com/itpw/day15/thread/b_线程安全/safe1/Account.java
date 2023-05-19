@@ -35,6 +35,7 @@ public class Account {
         double before = this.getBalance();
         double after = before - money;
         try {
+            // sleep模拟网络波动,注意sleep不会释放锁
             Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();

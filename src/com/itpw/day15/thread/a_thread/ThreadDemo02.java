@@ -14,17 +14,24 @@ public class ThreadDemo02 {
         // 使用Thread类来生成
         Thread t = new Thread(new MyRunnable());
         t.start();
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100; i++) {
             System.out.println("main线程-->"+i);
         }
 
+        // 使用Lambda完成
+        Thread t2 = new Thread(()->{
+            for (int i = 0; i < 100; i++) {
+                System.out.println(Thread.currentThread().getName()+"使用lambda方式"+i);
+            }
+        });
+        t2.start();
     }
 }
 
 class MyRunnable implements Runnable{
     @Override
     public void run() {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100; i++) {
             System.out.println("分支线程-->"+i);
         }
     }
