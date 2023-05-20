@@ -14,7 +14,8 @@ public class ThreadDemo07 {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
-        FutureTask<String> task = new FutureTask<>(new MyCallable());
+        MyCallable myCallable = new MyCallable();
+        FutureTask<String> task = new FutureTask<>(myCallable);
 
         // 将FutureTask类放入Thread有参构造
         Thread t = new Thread(task);
